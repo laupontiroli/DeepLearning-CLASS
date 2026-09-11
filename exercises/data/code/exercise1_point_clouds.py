@@ -14,7 +14,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 FIGURES = Path(__file__).resolve().parents[1] / "figures"
-RNG = np.random.default_rng(42)  # (1)!
+RNG = np.random.default_rng(42)
+S = [0.5, 1.0, 2.0, 4.0]
 
 CLASSES = {
     0: {"mean": [2.0, 3.0], "std": [0.8, 2.5]},
@@ -48,23 +49,25 @@ def separation_ratio(X: np.ndarray, y: np.ndarray) -> float:
     ]
     return float(np.mean(pairwise) / spreads.mean())
 
-
 def main() -> None:
     FIGURES.mkdir(parents=True, exist_ok=True)
-
-    X, y = generate()
-    fig, ax = plt.subplots(figsize=(7, 5))
-    for c in CLASSES:
-        ax.scatter(*X[y == c].T, s=14, alpha=0.75, label=f"Classe {c}")
-    ax.set_xlabel("$x_1$")
-    ax.set_ylabel("$x_2$")
-    ax.set_title("Nuvens de pontos gaussianas (scale = 1.0)")
-    ax.legend(loc="upper left")
-    fig.tight_layout()
-    fig.savefig(FIGURES / "fig01-point-clouds.png", dpi=150)
-    plt.close(fig)  # (2)!
-
-    for scale in (0.5, 1.0, 2.0):
+    for scale in S:
+        X, y = generate(scale)
+        centroids = np.stack([X[y == c].mean(axis=0) for c in CLASSES])
+        X_centroid = [centroid[0] for centroid in centroids]
+        y_centroid = [centroid[1] for centroid in centroids]
+        fig, ax = plt.subplots(figsize=(7, 5))
+        for c in CLASSES:
+            ax.scatter(*X[y == c].T, s=14, alpha=0.75, label=f"Classe {c}")
+        ax.scatter(X_centroid,y_centroid,s=80,marker="X",color="black",label="Centroid")
+        ax.set_xlabel("$x_1$")
+        ax.set_ylabel("$x_2$")
+        ax.set_title(f"Nuvens de pontos gaussianas (scale = {scale})")
+        ax.legend(loc="upper left")
+        fig.tight_layout()
+        fig.savefig(FIGURES / f"fig01-point-clouds_{scale}.png", dpi=150)
+        plt.close(fig)  
+    for scale in S:
         Xs, ys = generate(scale)
         print(f"scale={scale:>4} | separation ratio = {separation_ratio(Xs, ys):.3f}")
 
