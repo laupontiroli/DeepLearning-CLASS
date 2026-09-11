@@ -2,7 +2,7 @@
 
 ???+ info inline end "Edição"
 
-    **20XX.X** <!-- TROCAR -->
+    **2026.2**
 
     [Enunciados :material-open-in-new:](https://insper.github.io/ann-dl/){:target='_blank'}
 
@@ -18,16 +18,9 @@ Quem responde por este repositório. Os **exercícios são individuais**; a equi
 
 | Nome completo | E-mail | GitHub |
 |---------------|--------|--------|
-| | | |
+|Laura Pontiroli Machado|laurapm@al.insper.edu.br|laupontiroli|
 
-!!! tip "Como usar este template"
 
-    Este é um **bloco de notas versionado**: registre o que foi feito, o que falta e as
-    decisões tomadas, commitando a cada avanço. O prazo de uma entrega é o *timestamp do
-    último commit que toca a pasta daquela entrega* — não a hora do formulário nem a da
-    publicação no Pages.
-
-    Comece por [Como usar este template](template/index.md).
 
 ## Status das entregas
 
@@ -66,15 +59,6 @@ Um projeto, um dataset, três entregas:
 - [ ] Tabela **Results summary** completa, sem linhas em branco.
 - [ ] Último commit anterior ao prazo.
 
-!!! danger "Escreva para defender"
 
-    As notas da disciplina costumam estar sujeitas a defesa oral, e a nota do projeto, a uma
-    prova sobre o próprio projeto. Escreva relatórios que você consiga sustentar meses
-    depois — o que inclui entender cada linha do código que está no repositório. Confira as
-    regras da sua edição no overview.
 
-!!! danger "Uso de IA"
 
-    O campo `ai_use` é **obrigatório** em toda entrega. Colaborar com IA é permitido;
-    não declarar o uso, não. Descreva o que foi gerado, revisado ou depurado com apoio de
-    IA — ou escreva `"none"`.

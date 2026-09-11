@@ -17,9 +17,8 @@ ao longo do semestre, cada uma com data e peso próprios.
 
 | Nome completo | E-mail | GitHub |
 |---------------|--------|--------|
-| | | |
-| | | |
-| | | |
+|Laura Pontiroli Machado|laurapm@al.insper.edu.br|laupontiroli|
+||||
 
 Times de 2 a 3 pessoas. Repita esses nomes no cabeçalho de cada entrega — quem corrige pode
 abrir uma página sozinha, sem passar por aqui.
