@@ -129,6 +129,12 @@ not_in_nav: |
   /exercises/*/code/*
   /projects/*/code/*
 
+# Notebooks-fonte em code/ são artefatos para download/reexecução, não páginas.
+# Excluí-los do processamento evita conversões e warnings fora da navegação.
+exclude_docs: |
+  /exercises/*/code/*.ipynb
+  /projects/*/code/*.ipynb
+
 extra_javascript:
   # A configuração precisa vir ANTES da biblioteca do MathJax
   - javascripts/mathjax.js
