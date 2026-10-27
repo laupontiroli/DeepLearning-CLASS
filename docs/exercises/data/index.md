@@ -1,6 +1,6 @@
 ---
 exercise: data
-ai_use: "Claude foi usado para revisar a redação das análises e depurar o cálculo do separation ratio. Todo o código foi lido e testado por mim."
+ai_use: "Claude foi usado para refinar o texto, auxiliar na implementação do código e depurar o cálculo do separation ratio. Todo o código foi lido e testado por mim; sou responsável por compreender e explicar cada parte."
 ---
 
 # 1. Data

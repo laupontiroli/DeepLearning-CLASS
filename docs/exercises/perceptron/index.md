@@ -1,6 +1,6 @@
 ---
 exercise: perceptron
-ai_use: "GitHub Copilot auxiliou na estruturação do notebook, na implementação inicial do código e na redação desta análise. Os valores reportados foram extraídos da execução do notebook com a semente especificada."
+ai_use: "GitHub Copilot foi usado para refinar o texto, auxiliar na implementação do código e estruturar o notebook. Os valores reportados foram extraídos da execução do notebook com a semente especificada; sou responsável por compreender e explicar cada parte."
 ---
 
 # 2. Perceptron
