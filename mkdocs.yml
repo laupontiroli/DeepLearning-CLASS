@@ -134,6 +134,8 @@ not_in_nav: |
 exclude_docs: |
   /exercises/*/code/*.ipynb
   /projects/*/code/*.ipynb
+  # Dataset baixado pelo script (ex.: MNIST em exercises/vae/data/): não vai para o site.
+  /exercises/*/data/
 
 extra_javascript:
   # A configuração precisa vir ANTES da biblioteca do MathJax

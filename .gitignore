@@ -3,3 +3,5 @@ env/
 .cache/
 .vscode/
 target/
+# MNIST baixado por docs/exercises/vae/code/vae.py
+docs/exercises/*/data/

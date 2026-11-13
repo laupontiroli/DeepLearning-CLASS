@@ -1,3 +1,7 @@
+# Índice extra do PyTorch só com builds de CPU: sem ele, o `pip install` no CI (Linux)
+# baixaria vários GB de bibliotecas CUDA que o site nunca usa.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 # --- site (mkdocs) --------------------------------------------------------
 # O MkDocs 2.0 remove o sistema de plugins e quebra todos os plugins abaixo, sem
 # caminho de migração. Sem este limite, o CI de todo aluno quebra no dia do lançamento.
@@ -16,3 +20,7 @@ numpy
 pandas
 matplotlib
 scikit-learn
+scipy
+# PyTorch (VAE): torchvision só para baixar o MNIST
+torch
+torchvision
